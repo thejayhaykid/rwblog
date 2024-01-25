@@ -1,12 +1,15 @@
-import { Link, routes } from '@redwoodjs/router'
+import { Box, Text } from '@mantine/core'
 import { MetaTags } from '@redwoodjs/web'
+
+import ArticlesCell from 'src/components/ArticlesCell'
 
 const HomePage = () => {
   return (
-    <div className="top-10 text-center">
+    <Box>
       <MetaTags title="Home" description="Home page" />
-      Home
-    </div>
+      <Text>Home</Text>
+      <ArticlesCell />
+    </Box>
   )
 }
 
